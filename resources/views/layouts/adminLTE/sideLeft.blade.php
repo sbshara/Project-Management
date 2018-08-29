@@ -1,3 +1,14 @@
+@guest
+  <aside class="main-sidebar">
+	  <section class="sidebar">
+		  <ul class="sidebar-menu" data-widget="tree">
+			  <li><a href="{{ __('login') }}"><i class="fa fa-sign-in-alt"></i> <span>Login</span></a></li>
+			  <li><a href="{{ __('Register') }}"><i class="fa fa-user-plus"></i> <span>Register</span></a></li>
+		  </ul>
+	  </section>
+  </aside>
+
+@else
   <!-- Left side column. contains the logo and sidebar -->
   <aside class="main-sidebar">
 
@@ -7,10 +18,10 @@
       <!-- Sidebar user panel (optional) -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
+          <img src="{{ url('/') }}/img/shiblie.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>{{ Auth::user()->name }}</p>
           <!-- Status -->
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
@@ -50,3 +61,4 @@
     </section>
     <!-- /.sidebar -->
   </aside>
+@endguest

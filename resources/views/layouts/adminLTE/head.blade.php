@@ -11,5 +11,12 @@
   @include('layouts.adminLTE.css')
   @yield('additionalCSS')
 </head>
-<body class="hold-transition skin-blue sidebar-mini">
+
+@guest
+	<body class="hold-transition skin-blue sidebar-mini sidebar-collapsed sidebar-collapse">
+@else
+	<body class="hold-transition skin-blue sidebar-mini sidebar-collapsed">
+@endguest
+
+
 <div class="wrapper">

@@ -23,12 +23,12 @@
 		  <ul class="nav navbar-nav">
 			  <li class="dropdown user user-menu">
 				  <a href="{{ route('login') }}" class="nav-link">
-					  <span class="hidden-xs">{{ __('Login') }}</span>
+					  <span class="hidden-xs">{{ __('Login') }} <i class="fa fa-sign-in-alt"></i></span>
 				  </a>
 			  </li>
 			  <li class=" dropdown user user-menu">
 				  <a class="nav-link" href="{{ route('register') }}">
-					  <span class="hidden-xs">{{ __('Register') }}</span>
+					  <span class="hidden-xs">{{ __('Register') }} <i class="fa fa-user-plus"></i></span>
 				  </a>
 			  </li>
 		  </ul>
@@ -41,7 +41,7 @@
           <li class="dropdown messages-menu">
             <!-- Menu toggle button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-envelope-o"></i>
+              <i class="fa fa-envelope"></i>
               <span class="label label-success">4</span>
             </a>
             <ul class="dropdown-menu">
@@ -53,7 +53,7 @@
                     <a href="#">
                       <div class="pull-left">
                         <!-- User Image -->
-                        <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="{{ url('/') }}/img/shiblie.jpg" class="img-circle" alt="User Image">
                       </div>
                       <!-- Message title and timestamp -->
                       <h4>
@@ -77,7 +77,7 @@
           <li class="dropdown notifications-menu">
             <!-- Menu toggle button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-bell-o"></i>
+              <i class="fa fa-bell"></i>
               <span class="label label-warning">10</span>
             </a>
             <ul class="dropdown-menu">
@@ -100,7 +100,7 @@
           <li class="dropdown tasks-menu">
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-flag-o"></i>
+              <i class="fa fa-flag"></i>
               <span class="label label-danger">9</span>
             </a>
             <ul class="dropdown-menu">
@@ -138,14 +138,14 @@
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <!-- The user image in the navbar-->
-              <img src="img/user2-160x160.jpg" class="user-image" alt="User Image">
+              <img src="{{ url('/') }}/img/shiblie.jpg" class="user-image" alt="User Image">
               <!-- hidden-xs hides the username on small devices so only the image appears. -->
               <span class="hidden-xs">{{ Auth::user()->name }}</span>
             </a>
             <ul class="dropdown-menu">
               <!-- The user image in the menu -->
               <li class="user-header">
-                <img src="img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                <img src="{{ url('/') }}/img/shiblie.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   {{ Auth::user()->name }} - Web Developer
