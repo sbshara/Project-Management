@@ -15,12 +15,12 @@ class Comment extends Model
 		'commentable_id',
 		'user_id',
     ];
-	
-	public function user() 
+
+	public function user()
 	{
 		return $this->belongsTo('App\User');
 	}
-	
+
 	public function commentOn()
 	{
 		if ($this->commentable_type === 'Post'){
@@ -28,7 +28,5 @@ class Comment extends Model
 		} else {
 			return Task::find($this->commentable_id);
 		}
-		endif
 	}
-	
 }

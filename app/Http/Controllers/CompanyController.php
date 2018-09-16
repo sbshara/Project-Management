@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Company;
+use App\Project;
 use Illuminate\Http\Request;
 
 class CompanyController extends Controller
@@ -24,9 +25,9 @@ class CompanyController extends Controller
         //
     }
 
-    public function show(Company $company)
+    public function show(Company $company, Request $request)
     {
-        return view('companies.show', compact('company'));
+		return view('companies.show', compact('company'));
     }
 
     public function edit(Company $company)
@@ -43,4 +44,5 @@ class CompanyController extends Controller
     {
         //
     }
+	
 }

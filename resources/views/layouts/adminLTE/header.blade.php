@@ -100,7 +100,7 @@
           <li class="dropdown tasks-menu">
             <!-- Menu Toggle Button -->
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <i class="fa fa-flag"></i>
+              <i class="fa fa-tasks"></i>
               <span class="label label-danger">9</span>
             </a>
             <ul class="dropdown-menu">

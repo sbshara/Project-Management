@@ -3,6 +3,8 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use App\User;
+use App\Task;
 
 class Project extends Model
 {
@@ -35,4 +37,14 @@ class Project extends Model
 		return $this->belongsTo('App\Company');
 	}
 	
+	public function projectTasks()
+	{
+		$tasks = Task::where('project_id', $this->id)->get();
+		return $tasks;
+	}
+	
+	public function projectUser()
+	{
+		return User::find($this->user_id);
+	}
 }

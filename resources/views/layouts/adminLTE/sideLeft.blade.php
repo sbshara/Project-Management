@@ -41,24 +41,97 @@
 
       <!-- Sidebar Menu -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">HEADER</li>
-        <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Link</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Another Link</span></a></li>
-        <li class="treeview">
-          <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+		  <li class="header">Main Options</li>
+		  <!-- Optionally, you can add icons to the links -->
+		  <li class="treeview">
+          <a href="#"><i class="fa fa-building"></i> <span>Companies</span>
             <span class="pull-right-container">
                 <i class="fa fa-angle-left pull-right"></i>
               </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="#">Link in level 2</a></li>
-            <li><a href="#">Link in level 2</a></li>
+            <li><a href="#">All</a></li>
+            <li><a href="#">Create New</a></li>
           </ul>
         </li>
-      </ul>
-      <!-- /.sidebar-menu -->
-    </section>
-    <!-- /.sidebar -->
-  </aside>
+		  <!-- ./Companies -->
+		  <li class="treeview	">
+          <a href="#"><i class="fa fa-project-diagram"></i> <span>Projects</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Create New</a></li>
+          </ul>
+        </li>
+		  <!-- ./Projects -->
+		  <li class="treeview	">
+          <a href="#"><i class="fa fa-tasks"></i> <span>Tasks</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Create New</a></li>
+          </ul>
+        </li>
+		  <!-- ./Tasks -->
+		  <li class="treeview	">
+          <a href="#"><i class="fa fa-pen"></i> <span>Posts</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Create New</a></li>
+          </ul>
+        </li>
+		  <!-- ./Posts -->
+		  <li class="treeview	">
+          <a href="#"><i class="fa fa-users"></i> <span>Users</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">All</a></li>
+            <li><a href="#">Create New</a></li>
+          </ul>
+        </li>
+		  <!-- ./Users -->
+		  <li class="treeview	">
+          <a href="#"><i class="fa fa-tachometer-alt"></i> <span>Admin</span>
+            <span class="pull-right-container">
+                <i class="fa fa-angle-left pull-right"></i>
+              </span>
+          </a>
+          <ul class="treeview-menu">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+          </ul>
+        </li>
+		  <!-- ./Admin -->
+		  <li class="active">
+			  <a href="#"><i class="fa fa-link"></i> <span>Link</span></a>
+		  </li>
+		  <li class="treeview">
+			  <a href="#"><i class="fa fa-link"></i> <span>Multilevel</span>
+				  <span class="pull-right-container">
+					  <i class="fa fa-angle-left pull-right"></i>
+				  </span>
+			  </a>
+			  <ul class="treeview-menu">
+				  <li><a href="#">Link in level 2</a></li>
+				  <li><a href="#">Link in level 2</a></li>
+			  </ul>
+		  </li>
+	  </ul>
+	  <!-- /.sidebar-menu -->
+  </section>
+  <!-- /.sidebar -->
+</aside>
 @endguest
